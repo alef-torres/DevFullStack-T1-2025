@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: rgb(192, 208, 223);
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+    }
+
+    .menu ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+    }
+
+    .menu li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: 100px;
+      height: 100%;
+      background-color: rgb(170, 217, 201);
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu a {
+      font-size: 20px;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: black;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 500px;
+    }
+
+    .card {
+      height: 250px;
+      box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      height: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Google</a></li>
+        <li><a href="">Imagens</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="main">
+    <div class="card">
+      <img src="img/bicicleta.png" alt="">
+    </div>
+    <div class="card">
+      <img src="img/bola.png" alt="">
+    </div>
+    <div class="card">
+      <img src="img/patinete.png" alt="">
+    </div>
+  </section>
+</body>
+
+</html>

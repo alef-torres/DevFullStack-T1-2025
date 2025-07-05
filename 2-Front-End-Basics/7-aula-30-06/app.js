@@ -7,7 +7,7 @@ let itens = []
 
 window.addEventListener('DOMContentLoaded', () => {
     const dados = localStorage.getItem('listaCompras')
-    if(dados) {
+    if (dados) {
         itens = JSON.parse(dados)
         renderizarLista()
     }
@@ -38,14 +38,14 @@ function renderizarLista() {
 formAdicionar.addEventListener('submit', (evento) => {
     evento.preventDefault()
     const novoItem = inputItem.value.trim()
-    if(novoItem === '') return; 
+    if (novoItem === '') return;
     itens.push(novoItem)
 
     salvarDados()
     renderizarLista()
 
     inputItem.value = ''
-})  
+})
 
 function removerItem(indice) {
     itens.splice(indice, 1)
@@ -54,12 +54,14 @@ function removerItem(indice) {
 }
 
 btnLimpar.addEventListener('click', () => {
-    if(confirm('Deseja realmente limpar toda a lista?')) { 
+    if (confirm('Deseja realmente limpar toda a lista?')) {
         itens = []
         salvarDados()
         renderizarLista()
     }
 })
+
+
 
 
 // Funcionalidades:
